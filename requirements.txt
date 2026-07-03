@@ -1,0 +1,31 @@
+# ── Required (always needed) ──────────────────────────────────────────────────
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# ── TTS — free, no API key, 300+ voices ──────────────────────────────────────
+edge-tts>=6.1.9
+
+# ── API-based generation (install only what you plan to use) ──────────────────
+# fal-client>=0.10.0       # fal.ai — fast image + video (free tier; rate limits apply)
+# replicate>=0.25.0        # Replicate — high quality, pay per use
+# openai>=1.30.0           # DALL-E 3, OpenAI TTS, GPT prompt enhancement
+
+# ── Local image generation (GPU strongly recommended; CPU = 5–15 min/image) ──
+# torch>=2.3.0
+# diffusers>=0.27.0
+# transformers>=4.40.0
+# accelerate>=0.30.0
+# Pillow>=10.3.0
+
+# ── Local music generation (slow on CPU) ─────────────────────────────────────
+# scipy>=1.13.0
+# transformers>=4.40.0    # same as above
+
+# ── Auto-captions (local, free) ───────────────────────────────────────────────
+# openai-whisper>=20231117
+
+# ── System dependencies (NOT pip — install separately) ───────────────────────
+# ffmpeg — REQUIRED for video editing, mixing, captions, and the studio pipeline
+#   macOS:   brew install ffmpeg
+#   Ubuntu:  sudo apt install ffmpeg
+#   Windows: https://ffmpeg.org/download.html
